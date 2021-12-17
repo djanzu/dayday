@@ -1,3 +1,5 @@
+# これだとうるう秒が考慮されていないらしいので
+
 from datetime import datetime
 from pytz import timezone
 import pytz
@@ -10,5 +12,6 @@ a = datetime(2021, 3, 15, 11, 0, 0, 0, tzinfo=cst)
 
 js = a.astimezone(jst)
 
+print(a)
 print(js)
 
